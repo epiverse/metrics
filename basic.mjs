@@ -13,13 +13,13 @@ function SSSV(x){ // squared root of sum of squared values
 }
 
 function cosine(a=[1,2,3],b=[4,5,6]){
-    // Cosine similarity = 1 - cosine distance
+    // Cosine distance
     // AB/(A.B) 
     let AB = a.map((ai,i)=>ai*b[i])
     AB = AB.reduce((v1,v2)=>(v1+v2))
     let A = SSSV(a)
     let B = SSSV(b)
-    return AB/(A*B)
+    return 1-AB/(A*B) // cosine similarity = 1 - cosine distance
 }
 
 export {euclid,cosine}
