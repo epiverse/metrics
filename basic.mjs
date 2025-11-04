@@ -19,7 +19,7 @@ function cosine(a=[1,2,3],b=[4,5,6]){
     AB = AB.reduce((v1,v2)=>(v1+v2))
     let A = SSSV(a)
     let B = SSSV(b)
-    return AB/(A*B)
+    return 1-AB/(A*B)
 }
 
 export {euclid,cosine}
