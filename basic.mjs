@@ -22,8 +22,11 @@ function cosine(a=[1,2,3],b=[4,5,6]){
     return 1-AB/(A*B) // distance = 1-similarity
 }
 
-function corr(a=[1,2,3],b=[4,5,6]){
+function corr(x=[1,2,3],y=[4,5,6]){
     // Pearson correlation coeficient
+    let n = x.length
+    let avg_x = x.reduce((a,b)=>a+b)/n
+    let avg_y = y.reduce((a,b)=>a+b)/n
     return 'under development'
 }
 
