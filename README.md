@@ -1,5 +1,5 @@
 # metrics
-Experimenting with different distance metrics, coded as ES6 modules. Start with simples example with [Euclidean Distance](https://github.com/epiverse/metrics/wiki). Note not all distances will be true metrics, for example, [cosine distance](https://en.wikipedia.org/wiki/Cosine_similarity) does not satisfy triangular inequality, also demonstrated here:
+Experimenting with different distance metrics, coded as ES6 modules. Start with simplest example, [Euclidean Distance](https://github.com/epiverse/metrics/wiki). Note not all distances will be true metrics, for example, [cosine distance](https://en.wikipedia.org/wiki/Cosine_similarity) does not satisfy triangular inequality, as demonstrated here:
 
 ```javascript
 A=[1,0];
@@ -16,7 +16,6 @@ show an example of triangular innequality not being satisfied by cosine distance
 dAB = mod.cosine(A,B) = 0.4
 dBC = mod.cosine(B,C) = 1
 dAC = mod.cosine(A,C) = 1.8
-dAC<=(dAB+dBC)
-false
+dAC<=(dAB+dBC) = false
 ```
 For more discussion of the metrics modules see the [metrics wiki](https://github.com/epiverse/metrics/wiki)
