@@ -1,1 +1,1 @@
-// metrics based in shared neighbors
+// metrics based on shared neighbors
