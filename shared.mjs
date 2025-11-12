@@ -14,7 +14,7 @@ function generateVectors(n=5, m=3) {
 function euclidSync(a=[1,2,3],b=[4,5,6]){ // default sync euclid distance
     // Euclidean distance, copied from 
     // (await import('https://epiverse.github.io/metrics/basic.mjs'))['euclid']
-    // maybe turn this into a async parm, for now keep it locally async
+    // maybe turn this into a async parm, for now keep it locally sync
     return Math.sqrt(a.map((ai,i)=>(ai-b[i])**2).reduce((x,y)=>x+y))
 }
 
