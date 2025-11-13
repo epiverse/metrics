@@ -1,4 +1,4 @@
-// metrics based on unique shared neighbors
+// metrics based on shared neighbors
 
 function generateVectors(n=5, m=3) {
     // size, dimensions
@@ -36,6 +36,18 @@ function crossTab(vec){ // cross tabulation of distances
     return ctab
 }
 
+function sortWithIndexes(arr) {
+  if(!arr){
+      arr = [...Array(5)].map(_=>Math.random())
+  } 
+  const paired = arr.map((value, index) => ({ value, index }));
+  paired.sort((a, b) => a.value - b.value);
+  const sortedValues = paired.map(item => item.value);
+  const originalIndexes = paired.map(item => item.index);
+  return [sortedValues, originalIndexes];
+}
+
+/*
 function unique(nns, a, b) {
     // unique share neighbors
     if (!nns) {
@@ -54,5 +66,6 @@ function unique(nns, a, b) {
     }
     return ['under development', nns]
 }
+*/
 
-export {unique,euclidSync}
+export {unique,euclidSync,crossTab,generateVectors,sortWithIndexes}
