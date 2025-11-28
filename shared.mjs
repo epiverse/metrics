@@ -68,4 +68,4 @@ function unique(nns, a, b) {
 }
 */
 
-export {unique,euclidSync,crossTab,generateVectors,sortWithIndexes}
+export {euclidSync,crossTab,generateVectors,sortWithIndexes}
