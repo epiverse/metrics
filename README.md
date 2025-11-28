@@ -19,3 +19,4 @@ dAC = mod.cosine(A,C) = 1.8
 dAC<=(dAB+dBC) = false
 ```
 For more discussion of the metrics modules see the [metrics wiki](https://github.com/epiverse/metrics/wiki)
+* Live at https://epiverse.github.io/metrics
