@@ -47,6 +47,8 @@ function sortWithIndexes(arr) {
   return [sortedValues, originalIndexes];
 }
 
+function sieve(){}
+
 /*
 function unique(nns, a, b) {
     // unique share neighbors
@@ -68,4 +70,4 @@ function unique(nns, a, b) {
 }
 */
 
-export {euclidSync,crossTab,generateVectors,sortWithIndexes}
+export {euclidSync,crossTab,generateVectors,sortWithIndexes,sieve}
