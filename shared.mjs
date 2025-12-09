@@ -47,7 +47,7 @@ function sortWithIndexes(arr) {
   return [sortedValues, originalIndexes];
 }
 
-function sieve(){}
+function sieve(x,y){return `hello from seive at \n${Date()}`}
 
 /*
 function unique(nns, a, b) {
